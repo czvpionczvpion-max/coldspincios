@@ -844,16 +844,76 @@ main,
   50% { transform: translate3d(18px, -22px, 0) rotate(8deg); }
 }
 
-@media (max-width: 900px) {
-  .brand-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media (max-width: 800px) {
   .hero-inner {
     grid-template-columns: minmax(0, 1fr);
     gap: 12px;
+  }
+
+  .hero-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .brand-pair {
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .brand-mark::after {
+    margin-inline: auto;
+  }
+
+  .hero-offer {
+    align-items: center;
+  }
+
+  .offer-row {
+    justify-content: center;
+  }
+
+  .hero-support {
+    margin-inline: auto;
+  }
+
+  .promo-box {
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .section-inner {
+    text-align: center;
+  }
+
+  .section-lead {
+    margin-inline: auto;
+  }
+
+  .brand-card {
+    align-items: center;
+  }
+
+  .deposit-card {
+    align-items: center;
+  }
+
+  .deposit-n {
+    align-self: center;
+  }
+
+  .promo-box--wide .promo-box-copy {
+    align-items: center;
+  }
+
+  .promo-box--wide .promo-code {
+    align-self: center;
   }
 
   .hero-photo {
@@ -868,6 +928,16 @@ main,
 
   .step-list {
     grid-template-columns: 1fr;
+  }
+
+  .step-list li {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 8px;
+  }
+
+  .step-num {
+    justify-self: center;
   }
 }
 
@@ -909,6 +979,14 @@ main,
     max-width: none;
   }
 
+  .promo-box-copy {
+    align-items: center;
+  }
+
+  .promo-code {
+    align-self: center;
+  }
+
   .promo-copy {
     width: 100%;
   }
@@ -918,16 +996,85 @@ main,
     width: 100%;
   }
 
+  .brand-pair {
+    gap: 10px;
+  }
+
+  .brand-logo {
+    flex: 1 1 0;
+    height: auto;
+    max-height: 64px;
+    object-fit: contain;
+  }
+
+  .brand-x {
+    flex-shrink: 0;
+    font-size: 1.8rem;
+  }
+
+  .brand-grid {
+    gap: 10px;
+    margin-top: 28px;
+  }
+
   .brand-card {
-    padding: 26px 18px;
+    padding: 18px 10px;
+    border-radius: 12px;
+  }
+
+  .brand-card-logo,
+  .brand-card-logo--cold {
+    width: 100%;
+    max-width: 150px;
+    height: 48px;
+    object-fit: contain;
+  }
+
+  .brand-card-sub {
+    margin-top: 10px;
+    font-size: 0.56rem;
+    letter-spacing: 0.12em;
   }
 
   .mini-perks {
     grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    margin-top: 16px;
+  }
+
+  .mini-perks li {
+    padding: 8px 4px;
+  }
+
+  .mini-perks strong {
+    font-size: 1.15rem;
+  }
+
+  .mini-perks span {
+    font-size: 0.52rem;
+    letter-spacing: 0.06em;
+  }
+
+  .brand-card-text {
+    margin: 14px 0 16px;
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+
+  .brand-card .btn {
+    min-height: 46px;
+    padding: 8px 10px;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+  }
+
+  .brand-card-login {
+    margin-top: 12px;
+    font-size: 0.78rem;
   }
 
   .step-list li {
-    grid-template-columns: 44px 1fr;
     padding: 18px 14px;
   }
 
