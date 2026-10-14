@@ -241,9 +241,9 @@ main,
 
 /* ——— Hero ——— */
 .hero {
-  min-height: calc(100vh - 88px);
   display: flex;
   align-items: center;
+  border-top: 1px solid var(--line);
 }
 
 .hero-inner {
@@ -547,14 +547,14 @@ main,
 
 /* ——— Brand cards ——— */
 .brands {
-  border-top: 1px solid var(--line);
+  padding-top: clamp(24px, 4vw, 44px);
 }
 
 .brand-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  margin-top: 40px;
+  margin-top: 24px;
 }
 
 .brand-card {
